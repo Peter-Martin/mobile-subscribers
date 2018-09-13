@@ -10,16 +10,16 @@ from sklearn.metrics import confusion_matrix, precision_score, recall_score
 # -----------------------------------------------------------------------------
 # 1) Import training and test data sets, split each into features/labels
 
-# training_features = pd.read_csv('/home/peter/Documents/projects/MobileSubscribers/atm/training.csv')
-# training_features = pd.read_csv('/home/peter/Documents/projects/MobileSubscribers/atm/simple/training.csv')
+# training_features = pd.read_csv('../../prepare-data/one-label/training.csv')
+# training_features = pd.read_csv('../../prepare-data/one-label/simple/training.csv')
 training_features = pd.read_csv(
-    '/home/peter/Documents/projects/MobileSubscribers/atm/simple/downgrade/postpaid/training.csv')
+    '../../prepare-data/one-label/simple/downgrade/postpaid/training.csv')
 training_labels = training_features.pop('UpdatedIn90Days').values
 
-# test_features = pd.read_csv('/home/peter/Documents/projects/MobileSubscribers/atm/test.csv')
-# test_features = pd.read_csv('/home/peter/Documents/projects/MobileSubscribers/atm/simple/test.csv')
+# test_features = pd.read_csv('../../prepare-data/one-label/test.csv')
+# test_features = pd.read_csv('../../prepare-data/one-label/simple/test.csv')
 test_features = pd.read_csv(
-    '/home/peter/Documents/projects/MobileSubscribers/atm/simple/downgrade/postpaid/test.csv')
+    '../../prepare-data/one-label/simple/downgrade/postpaid/test.csv')
 test_labels = test_features.pop('UpdatedIn90Days').values
 
 # -----------------------------------------------------------------------------
