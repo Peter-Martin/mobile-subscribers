@@ -1,0 +1,4 @@
+# removes prepaid subscribers
+grep '^1' ../training.csv >> training.csv
+# remove features only relevant to prepaid
+cat training.csv | cut -d',' -f 2-3,6- > newtraining.csv
