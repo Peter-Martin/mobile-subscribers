@@ -5,9 +5,9 @@
 import pandas as pd
 import tensorflow as tf
 
-TRAIN_URL = "file:///home/peter/Documents/projects/MobileSubscribers/training-labelled.csv"
-VALIDATION_URL = "file:///home/peter/Documents/projects/MobileSubscribers/validation-labelled.csv"
-TEST_URL = "file:///home/peter/Documents/projects/MobileSubscribers/test-labelled.csv"
+TRAIN_URL = "file:///../../prepare-data/training-labelled.csv"
+VALIDATION_URL = "file:///../../prepare-data/validation-labelled.csv"
+TEST_URL = "file:///../../prepare-data/test-labelled.csv"
 
 CSV_COLUMN_NAMES = [
     'Postpaid', 'ContractLengthWeeks', 'AveragePayment', 'NumberOfPayments', 'AveragePeakCreditBalance',
