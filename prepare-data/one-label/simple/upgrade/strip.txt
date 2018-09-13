@@ -1,0 +1,2 @@
+# strips out 'downgraded' labels so only have upgraded and unchanged
+grep '\,[12]$' ../training.csv >> training.csv
