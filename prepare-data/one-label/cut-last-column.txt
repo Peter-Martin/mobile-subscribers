@@ -1,0 +1,2 @@
+# removes last column from CSV file
+cat training.csv | cut -d',' -f -13 > newtraining.csv
