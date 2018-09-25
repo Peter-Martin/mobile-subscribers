@@ -1,5 +1,5 @@
 # Description
-Train machine learning models using [scikit-learn](http://scikit-learn.org/stable/index.html).
+Trains machine learning models using [scikit-learn](http://scikit-learn.org/stable/index.html).
 
 __auto-sklearn.py__
 
