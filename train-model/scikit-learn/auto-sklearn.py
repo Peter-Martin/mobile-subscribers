@@ -1,5 +1,5 @@
 # =============================================================================
-# Automatic model training using scikit-learn and autosklearn package
+# Automatic model training using scikit-learn and auto-sklearn package
 # =============================================================================
 
 import pandas as pd
