@@ -78,32 +78,32 @@ class Datasets:
 # LABELS: multiple downgrade + upgrade
 # SUBSCRIBERS: postpaid + prepaid
 full = Datasets(
-    '/home/peter/Documents/projects/MobileSubscribers/atm/training.csv',
-    '/home/peter/Documents/projects/MobileSubscribers/atm/test.csv',
+    '../../prepare-data/one-label/training.csv',
+    '../../prepare-data/one-label/test.csv',
     [0, 1, 2]
 )
 
 # LABELS: single downgrade + upgrade
 # SUBSCRIBERS: postpaid + prepaid
 simple = Datasets(
-    '/home/peter/Documents/projects/MobileSubscribers/atm/simple/training.csv',
-    '/home/peter/Documents/projects/MobileSubscribers/atm/simple/test.csv',
+    '../../prepare-data/one-label/simple/training.csv',
+    '../../prepare-data/one-label/simple/test.csv',
     [0]
 )
 
 # LABELS: single downgrade
 # SUBSCRIBERS: postpaid + prepaid
 simple_downgrade = Datasets(
-    '/home/peter/Documents/projects/MobileSubscribers/atm/simple/downgrade/training.csv',
-    '/home/peter/Documents/projects/MobileSubscribers/atm/simple/downgrade/test.csv',
+    '../../prepare-data/one-label/simple/downgrade/training.csv',
+    '../../prepare-data/one-label/simple/downgrade/test.csv',
     [0]
 )
 
 # LABELS: single downgrade
 # SUBSCRIBERS: postpaid
 simple_downgrade_postpaid = Datasets(
-    '/home/peter/Documents/projects/MobileSubscribers/atm/simple/downgrade/postpaid/training.csv',
-    '/home/peter/Documents/projects/MobileSubscribers/atm/simple/downgrade/postpaid/test.csv',
+    '../../prepare-data/one-label/simple/downgrade/postpaid/training.csv',
+    '../../prepare-data/one-label/simple/downgrade/postpaid/test.csv',
     [0]
 )
 
@@ -146,89 +146,89 @@ iterations = [
 
     # iteration name, features/labels, scaled, oversampled, classifier
     
-    # Iteration('Full | MLP', full, False, False, mlp()),
-    # Iteration('Full | Random Forest', full, False, False, rf()),
-    # Iteration('Full | Gradient Boosting', full, False, False, gb()),
-    # Iteration('Full | SGD', full, False, False, sgd()),
-    # Iteration('Full | Linear SVC', full, False, False, lsv()),
-    # Iteration('Full | MLP | Oversampled', full, False, True, mlp()),
-    # Iteration('Full | Random Forest | Oversampled', full, False, True, rf()),
-    # # Iteration('Full | Gradient Boosting | Oversampled', full, False, True, gb()),
-    # Iteration('Full | SGD | Oversampled', full, False, True, sgd()),
-    # Iteration('Full | Linear SVC | Oversampled', full, False, True, lsv()),
-    # Iteration('Full | MLP | Scaled', full, True, False, mlp()),
-    # Iteration('Full | Random Forest | Scaled', full, True, False, rf()),
-    # # Iteration('Full | Gradient Boosting | Scaled', full, True, False, gb()),
-    # Iteration('Full | SGD | Scaled', full, True, False, sgd()),
-    # Iteration('Full | Linear SVC | Scaled', full, True, False, lsv()),
-    # Iteration('Full | MLP | Scaled | Oversampled', full, True, True, mlp()),
-    # Iteration('Full | Random Forest | Scaled | Oversampled', full, True, True, rf()),
-    # # Iteration('Full | Gradient Boosting | Scaled | Oversampled', full, True, True, gb()),
-    # Iteration('Full | SGD | Scaled | Oversampled', full, True, True, sgd()),
-    # Iteration('Full | Linear SVC | Scaled | Oversampled', full, True, True, lsv()),
-    #
-    # Iteration('Simple | MLP', simple, False, False, mlp()),
-    # Iteration('Simple | Random Forest', simple, False, False, rf()),
-    # Iteration('Simple | Gradient Boosting', simple, False, False, gb()),
-    # Iteration('Simple | SGD', simple, False, False, sgd()),
-    # Iteration('Simple | Linear SVC', simple, False, False, lsv()),
-    # Iteration('Simple | MLP | Oversampled', simple, False, True, mlp()),
-    # Iteration('Simple | Random Forest | Oversampled', simple, False, True, rf()),
-    # # Iteration('Simple | Gradient Boosting | Oversampled', simple, False, True, gb()),
-    # Iteration('Simple | SGD | Oversampled', simple, False, True, sgd()),
-    # Iteration('Simple | Linear SVC | Oversampled', simple, False, True, lsv()),
-    # Iteration('Simple | MLP | Scaled', simple, True, False, mlp()),
-    # Iteration('Simple | Random Forest | Scaled', simple, True, False, rf()),
-    # # Iteration('Simple | Gradient Boosting | Scaled', simple, True, False, gb()),
-    # Iteration('Simple | SGD | Scaled', simple, True, False, sgd()),
-    # Iteration('Simple | Linear SVC | Scaled', simple, True, False, lsv()),
-    # Iteration('Simple | MLP | Scaled | Oversampled', simple, True, True, mlp()),
-    # Iteration('Simple | Random Forest | Scaled | Oversampled', simple, True, True, rf()),
-    # # Iteration('Simple | Gradient Boosting | Scaled | Oversampled', simple, True, True, gb()),
-    # Iteration('Simple | SGD | Scaled | Oversampled', simple, True, True, sgd()),
-    # Iteration('Simple | Linear SVC | Scaled | Oversampled', simple, True, True, lsv()),
-    #
-    # Iteration('Simple Downgrade | MLP', simple_downgrade, False, False, mlp()),
-    # Iteration('Simple Downgrade | Random Forest', simple_downgrade, False, False, rf()),
-    # Iteration('Simple Downgrade | Gradient Boosting', simple_downgrade, False, False, gb()),
-    # Iteration('Simple Downgrade | SGD', simple_downgrade, False, False, sgd()),
-    # Iteration('Simple Downgrade | Linear SVC', simple_downgrade, False, False, lsv()),
-    # Iteration('Simple Downgrade | MLP | Oversampled', simple_downgrade, False, True, mlp()),
-    # Iteration('Simple Downgrade | Random Forest | Oversampled', simple_downgrade, False, True, rf()),
-    # # Iteration('Simple Downgrade | Gradient Boosting | Oversampled', simple_downgrade, False, True, gb()),
-    # Iteration('Simple Downgrade | SGD | Oversampled', simple_downgrade, False, True, sgd()),
-    # Iteration('Simple Downgrade | Linear SVC | Oversampled', simple_downgrade, False, True, lsv()),
-    # Iteration('Simple Downgrade | MLP | Scaled', simple_downgrade, True, False, mlp()),
-    # Iteration('Simple Downgrade | Random Forest | Scaled', simple_downgrade, True, False, rf()),
-    # # Iteration('Simple Downgrade | Gradient Boosting | Scaled', simple_downgrade, True, False, gb()),
-    # Iteration('Simple Downgrade | SGD | Scaled', simple_downgrade, True, False, sgd()),
-    # Iteration('Simple Downgrade | Linear SVC | Scaled', simple_downgrade, True, False, lsv()),
-    # Iteration('Simple Downgrade | MLP | Scaled | Oversampled', simple_downgrade, True, True, mlp()),
-    # Iteration('Simple Downgrade | Random Forest | Scaled | Oversampled', simple_downgrade, True, True, rf()),
-    # # Iteration('Simple Downgrade | Gradient Boosting | Scaled | Oversampled', simple_downgrade, True, True, gb()),
-    # Iteration('Simple Downgrade | SGD | Scaled | Oversampled', simple_downgrade, True, True, sgd()),
-    # Iteration('Simple Downgrade | Linear SVC | Scaled | Oversampled', simple_downgrade, True, True, lsv()),
-    #
-    # Iteration('Simple Downgrade Postpaid | MLP', simple_downgrade_postpaid, False, False, mlp()),
-    # Iteration('Simple Downgrade Postpaid | Random Forest', simple_downgrade_postpaid, False, False, rf()),
-    # Iteration('Simple Downgrade Postpaid | Gradient Boosting', simple_downgrade_postpaid, False, False, gb()),
-    # Iteration('Simple Downgrade Postpaid | SGD', simple_downgrade_postpaid, False, False, sgd()),
-    # Iteration('Simple Downgrade Postpaid | Linear SVC', simple_downgrade_postpaid, False, False, lsv()),
-    # Iteration('Simple Downgrade Postpaid | MLP | Oversampled', simple_downgrade_postpaid, False, True, mlp()),
-    # Iteration('Simple Downgrade Postpaid | Random Forest | Oversampled', simple_downgrade_postpaid, False, True, rf()),
-    # # Iteration('Simple Downgrade Postpaid | Gradient Boosting | Oversampled', simple_downgrade_postpaid, False, True, gb()),
-    # Iteration('Simple Downgrade Postpaid | SGD | Oversampled', simple_downgrade_postpaid, False, True, sgd()),
-    # Iteration('Simple Downgrade Postpaid | Linear SVC | Oversampled', simple_downgrade_postpaid, False, True, lsv()),
-    # Iteration('Simple Downgrade Postpaid | MLP | Scaled', simple_downgrade_postpaid, True, False, mlp()),
-    # Iteration('Simple Downgrade Postpaid | Random Forest | Scaled', simple_downgrade_postpaid, True, False, rf()),
-    # # Iteration('Simple Downgrade Postpaid | Gradient Boosting | Scaled', simple_downgrade_postpaid, True, False, gb()),
-    # Iteration('Simple Downgrade Postpaid | SGD | Scaled', simple_downgrade_postpaid, True, False, sgd()),
-    # Iteration('Simple Downgrade Postpaid | Linear SVC | Scaled', simple_downgrade_postpaid, True, False, lsv()),
-    # Iteration('Simple Downgrade Postpaid | MLP | Scaled | Oversampled', simple_downgrade_postpaid, True, True, mlp()),
-    # Iteration('Simple Downgrade Postpaid | Random Forest | Scaled | Oversampled', simple_downgrade_postpaid, True, True, rf()),
-    # # Iteration('Simple Downgrade Postpaid | Gradient Boosting | Scaled | Oversampled', simple_downgrade_postpaid, True, True, gb()),
+    Iteration('Full | MLP', full, False, False, mlp()),
+    Iteration('Full | Random Forest', full, False, False, rf()),
+    Iteration('Full | Gradient Boosting', full, False, False, gb()),
+    Iteration('Full | SGD', full, False, False, sgd()),
+    Iteration('Full | Linear SVC', full, False, False, lsv()),
+    Iteration('Full | MLP | Oversampled', full, False, True, mlp()),
+    Iteration('Full | Random Forest | Oversampled', full, False, True, rf()),
+    # Iteration('Full | Gradient Boosting | Oversampled', full, False, True, gb()),
+    Iteration('Full | SGD | Oversampled', full, False, True, sgd()),
+    Iteration('Full | Linear SVC | Oversampled', full, False, True, lsv()),
+    Iteration('Full | MLP | Scaled', full, True, False, mlp()),
+    Iteration('Full | Random Forest | Scaled', full, True, False, rf()),
+    # Iteration('Full | Gradient Boosting | Scaled', full, True, False, gb()),
+    Iteration('Full | SGD | Scaled', full, True, False, sgd()),
+    Iteration('Full | Linear SVC | Scaled', full, True, False, lsv()),
+    Iteration('Full | MLP | Scaled | Oversampled', full, True, True, mlp()),
+    Iteration('Full | Random Forest | Scaled | Oversampled', full, True, True, rf()),
+    # Iteration('Full | Gradient Boosting | Scaled | Oversampled', full, True, True, gb()),
+    Iteration('Full | SGD | Scaled | Oversampled', full, True, True, sgd()),
+    Iteration('Full | Linear SVC | Scaled | Oversampled', full, True, True, lsv()),
+    
+    Iteration('Simple | MLP', simple, False, False, mlp()),
+    Iteration('Simple | Random Forest', simple, False, False, rf()),
+    Iteration('Simple | Gradient Boosting', simple, False, False, gb()),
+    Iteration('Simple | SGD', simple, False, False, sgd()),
+    Iteration('Simple | Linear SVC', simple, False, False, lsv()),
+    Iteration('Simple | MLP | Oversampled', simple, False, True, mlp()),
+    Iteration('Simple | Random Forest | Oversampled', simple, False, True, rf()),
+    # Iteration('Simple | Gradient Boosting | Oversampled', simple, False, True, gb()),
+    Iteration('Simple | SGD | Oversampled', simple, False, True, sgd()),
+    Iteration('Simple | Linear SVC | Oversampled', simple, False, True, lsv()),
+    Iteration('Simple | MLP | Scaled', simple, True, False, mlp()),
+    Iteration('Simple | Random Forest | Scaled', simple, True, False, rf()),
+    # Iteration('Simple | Gradient Boosting | Scaled', simple, True, False, gb()),
+    Iteration('Simple | SGD | Scaled', simple, True, False, sgd()),
+    Iteration('Simple | Linear SVC | Scaled', simple, True, False, lsv()),
+    Iteration('Simple | MLP | Scaled | Oversampled', simple, True, True, mlp()),
+    Iteration('Simple | Random Forest | Scaled | Oversampled', simple, True, True, rf()),
+    # Iteration('Simple | Gradient Boosting | Scaled | Oversampled', simple, True, True, gb()),
+    Iteration('Simple | SGD | Scaled | Oversampled', simple, True, True, sgd()),
+    Iteration('Simple | Linear SVC | Scaled | Oversampled', simple, True, True, lsv()),
+    
+    Iteration('Simple Downgrade | MLP', simple_downgrade, False, False, mlp()),
+    Iteration('Simple Downgrade | Random Forest', simple_downgrade, False, False, rf()),
+    Iteration('Simple Downgrade | Gradient Boosting', simple_downgrade, False, False, gb()),
+    Iteration('Simple Downgrade | SGD', simple_downgrade, False, False, sgd()),
+    Iteration('Simple Downgrade | Linear SVC', simple_downgrade, False, False, lsv()),
+    Iteration('Simple Downgrade | MLP | Oversampled', simple_downgrade, False, True, mlp()),
+    Iteration('Simple Downgrade | Random Forest | Oversampled', simple_downgrade, False, True, rf()),
+    # Iteration('Simple Downgrade | Gradient Boosting | Oversampled', simple_downgrade, False, True, gb()),
+    Iteration('Simple Downgrade | SGD | Oversampled', simple_downgrade, False, True, sgd()),
+    Iteration('Simple Downgrade | Linear SVC | Oversampled', simple_downgrade, False, True, lsv()),
+    Iteration('Simple Downgrade | MLP | Scaled', simple_downgrade, True, False, mlp()),
+    Iteration('Simple Downgrade | Random Forest | Scaled', simple_downgrade, True, False, rf()),
+    # Iteration('Simple Downgrade | Gradient Boosting | Scaled', simple_downgrade, True, False, gb()),
+    Iteration('Simple Downgrade | SGD | Scaled', simple_downgrade, True, False, sgd()),
+    Iteration('Simple Downgrade | Linear SVC | Scaled', simple_downgrade, True, False, lsv()),
+    Iteration('Simple Downgrade | MLP | Scaled | Oversampled', simple_downgrade, True, True, mlp()),
+    Iteration('Simple Downgrade | Random Forest | Scaled | Oversampled', simple_downgrade, True, True, rf()),
+    # Iteration('Simple Downgrade | Gradient Boosting | Scaled | Oversampled', simple_downgrade, True, True, gb()),
+    Iteration('Simple Downgrade | SGD | Scaled | Oversampled', simple_downgrade, True, True, sgd()),
+    Iteration('Simple Downgrade | Linear SVC | Scaled | Oversampled', simple_downgrade, True, True, lsv()),
+    
+    Iteration('Simple Downgrade Postpaid | MLP', simple_downgrade_postpaid, False, False, mlp()),
+    Iteration('Simple Downgrade Postpaid | Random Forest', simple_downgrade_postpaid, False, False, rf()),
+    Iteration('Simple Downgrade Postpaid | Gradient Boosting', simple_downgrade_postpaid, False, False, gb()),
+    Iteration('Simple Downgrade Postpaid | SGD', simple_downgrade_postpaid, False, False, sgd()),
+    Iteration('Simple Downgrade Postpaid | Linear SVC', simple_downgrade_postpaid, False, False, lsv()),
+    Iteration('Simple Downgrade Postpaid | MLP | Oversampled', simple_downgrade_postpaid, False, True, mlp()),
+    Iteration('Simple Downgrade Postpaid | Random Forest | Oversampled', simple_downgrade_postpaid, False, True, rf()),
+    # Iteration('Simple Downgrade Postpaid | Gradient Boosting | Oversampled', simple_downgrade_postpaid, False, True, gb()),
+    Iteration('Simple Downgrade Postpaid | SGD | Oversampled', simple_downgrade_postpaid, False, True, sgd()),
+    Iteration('Simple Downgrade Postpaid | Linear SVC | Oversampled', simple_downgrade_postpaid, False, True, lsv()),
+    Iteration('Simple Downgrade Postpaid | MLP | Scaled', simple_downgrade_postpaid, True, False, mlp()),
+    Iteration('Simple Downgrade Postpaid | Random Forest | Scaled', simple_downgrade_postpaid, True, False, rf()),
+    # Iteration('Simple Downgrade Postpaid | Gradient Boosting | Scaled', simple_downgrade_postpaid, True, False, gb()),
+    Iteration('Simple Downgrade Postpaid | SGD | Scaled', simple_downgrade_postpaid, True, False, sgd()),
+    Iteration('Simple Downgrade Postpaid | Linear SVC | Scaled', simple_downgrade_postpaid, True, False, lsv()),
+    Iteration('Simple Downgrade Postpaid | MLP | Scaled | Oversampled', simple_downgrade_postpaid, True, True, mlp()),
+    Iteration('Simple Downgrade Postpaid | Random Forest | Scaled | Oversampled', simple_downgrade_postpaid, True, True, rf()),
+    # Iteration('Simple Downgrade Postpaid | Gradient Boosting | Scaled | Oversampled', simple_downgrade_postpaid, True, True, gb()),
     Iteration('Simple Downgrade Postpaid | SGD | Scaled | Oversampled', simple_downgrade_postpaid, True, True, sgd()),
-    # Iteration('Simple Downgrade Postpaid | Linear SVC | Scaled | Oversampled', simple_downgrade_postpaid, True, True, lsv()),
+    Iteration('Simple Downgrade Postpaid | Linear SVC | Scaled | Oversampled', simple_downgrade_postpaid, True, True, lsv()),
 ]
 
 # execute each iteration and show its precision and recall
@@ -243,6 +243,8 @@ for iteration in iterations:
     # debug: catch cases where some classifiers never predict particular values
     missing_predictions = set(actual) - set(predictions)
     print("missing predictions: {}".format(missing_predictions))
+    # typically only want confusion matrix for iterations that score well on precision and recall
+    # note that 'labels' below needs to include measure labels + unchanged label value
     # print("CONFUSION MATRIX: \n{}".format(
     #     confusion_matrix(actual, predictions, labels = [0, 1])
     # ))
