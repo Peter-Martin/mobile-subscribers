@@ -1,11 +1,11 @@
 # Description
-Directory and subdirectories containing the various datasets used by this prototype.
+Directory and subdirectories containing the various synthetic datasets used by this prototype.
 
 - __all-labelled.csv:__
 Original full dataset (see below) labelled using [this Groovy code](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/src/Label.groovy).
 
 - __all-original.csv:__
-Original full dataset created by [Generate Data](http://generatedata.com/), then cleaned using [this Groovy code](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/src/Clean.groovy).
+Original full synthetic dataset created by [Generate Data](http://generatedata.com/), then cleaned using [this Groovy code](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/src/Clean.groovy).
 
 - __test-labelled.csv:__
 Subset (20%) of the labelled dataset above, used for testing model predictions.
