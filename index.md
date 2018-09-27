@@ -103,6 +103,7 @@ The original full labelled dataset is available
 [here](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/all-labelled.csv.tar.gz).
 The set of original labels and their values is as follows:
 
+<div align="left">
 <table>
 <tbody>
 <tr class="odd" align="left">
@@ -128,6 +129,7 @@ Note that some of the prototype iterations simplified the above label set; this 
 </tr>
 </tbody>
 </table>
+</div>
 
 # Software Evaluation
 
