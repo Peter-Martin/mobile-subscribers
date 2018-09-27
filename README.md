@@ -4,7 +4,7 @@ Prototype that uses machine learning to attempt prediction of mobile phone subsc
 # Contents
 - __prepare-data__: Synthetic datasets used for the prototype. Also contains Groovy code
 that's used to clean and label the datasets.
-- __train-model__: Machine learning model training using (primarily)
+- __train-model__: Machine learning model training and prediction using (primarily)
 [scikit-learn](http://scikit-learn.org/stable/index.html) and, to a lesser extent,
 [TensorFlow](https://www.tensorflow.org/).
 
