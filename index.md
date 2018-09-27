@@ -1,4 +1,3 @@
-<a name="overview"/></a>
 # Overview
 
 For any business that sells services to consumers, two key forecasting
@@ -87,7 +86,7 @@ was written to perform the cleaning.
 
 **3)** Label the data set; i.e., classify each subscriber as
 cancelled/downgraded/unchanged/upgraded according to the
-rules/inferences listed towards the end of the earlier [Overview](#overview)
+rules/inferences listed towards the end of the earlier Overview
 section. Note, however, that an element of
 real-world randomness was also included; e.g., so that a small number of
 apparently more ‘stable’ subscribers still downgrade or cancel, etc.
@@ -104,7 +103,7 @@ The original full labelled dataset is available
 [here](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/all-labelled.csv.tar.gz).
 The set of original labels and their values is as follows:
 
-<table>
+<table align="left">
 <tbody>
 <tr class="odd">
 <td><p><b>UpdatedIn90Days</b></p>
@@ -283,7 +282,7 @@ Scores. Note that the table excludes any iterations that didn’t complete
 or that failed to predict some classes.
 
 | *Train*                   | *Train*                  | *Train*    | *Train*         | *Predict*     | *Predict*  | *Predict*    |
-| ------------------------- | ------------------------ | ---------- | --------------- | ------------- | ---------- | ------------ |
+| :------------------------ | :----------------------- | ---------- | --------------- | ------------- | ---------- | ------------ |
 | **Data Set**              | **Classifier**           | **Scaled** | **Oversampled** | **Precision** | **Recall** | **F1 Score** |
 | Simple Downgrade Postpaid | MLP                      | yes        | yes             | 0.47          | 0.58       | 0.52         |
 | Simple Downgrade Postpaid | SGD                      | yes        | yes             | 0.43          | 0.61       | 0.50         |
@@ -347,23 +346,23 @@ follows; the matrices respectively show the metrics for *downgraded* and
 
 <p></p>
 
-|<div align="left">--- HIGHEST F1 SCORE ---<br/><br/>- Simple Downgrade Postpaid Dataset<br/>- Multi-layer Perceptron Classifier<br/>- Scaled<br/>- Oversampled</div>|
-|---|
+|--- HIGHEST F1 SCORE ---<br/><br/>- Simple Downgrade Postpaid Dataset<br/>- Multi-layer Perceptron Classifier<br/>- Scaled<br/>- Oversampled|
+|:---|
 |*\[\[15069 11039\]*<br/>*\[16726 55680\]\]*|
 |For predicting downgrades, this model iteration produced **15,069 true positives**; i.e., subscribers successfully predicted as downgrades. However, the model failed to predict 11,039 downgrades, thus it has a recall (‘quantity’) score of 0.58.|
 |In addition, the model produced **16,726 false positives**; i.e., erroneously predicted subscribers as downgraded when they were actually unchanged. This is from the total unchanged figure of (16,726 + 55,680). Thus, the model has a reasonable precision (‘quality’) score of 0.47.|
 
 
-|<div align="left">--- 2ND HIGHEST F1 SCORE ---<br/><br/>- Simple Downgrade Postpaid Dataset<br/>- Stochastic Gradient Descent Classifier<br/>- Scaled<br/>- Oversampled</div>|
-|---|
+|--- 2ND HIGHEST F1 SCORE ---<br/><br/>- Simple Downgrade Postpaid Dataset<br/>- Stochastic Gradient Descent Classifier<br/>- Scaled<br/>- Oversampled|
+|:---|
 |*\[\[16069 10039\]*<br/>*\[21660 50746\]\]*|
 |This model iteration scored similarly to the previous model; slightly better recall (‘quantity’) score of 0.61, but a slightly lower precision (‘quality’) score of 0.43.|
 
 It’s also useful to examine a very different confusion matrix for
 another model iteration:
 
-|<div align="left">--- LOWER F1 SCORE ---<br/><br/>- Simple Downgrade Postpaid Dataset<br/>- Multi-layer Perceptron Classifier<br/>- Not Scaled<br/>- Oversampled</div>|
-|---|
+|--- LOWER F1 SCORE ---<br/><br/>- Simple Downgrade Postpaid Dataset<br/>- Multi-layer Perceptron Classifier<br/>- Not Scaled<br/>- Oversampled|
+|:---|
 |*\[\[22156 3952\]*<br/>*\[51695 20711\]\]*|
 |For predicting downgrades, this model iteration produced **22,156 true positives**; i.e., subscribers successfully predicted as downgrades. The model only failed to predict 3,952 downgraded subscribers. So it has a high recall (‘quantity’) score of 0.85.|
 |However, the model produced **51,695 false positives**; i.e., erroneously predicted subscribers as downgraded when they were actually unchanged. This is from the total unchanged figure of (51,695 + 20,711). So the model has a low precision (‘quality’) score of 0.30.|
