@@ -103,9 +103,9 @@ The original full labelled dataset is available
 [here](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/all-labelled.csv.tar.gz).
 The set of original labels and their values is as follows:
 
-<table align="left">
+<table>
 <tbody>
-<tr class="odd">
+<tr class="odd" align="left">
 <td><p><b>UpdatedIn90Days</b></p>
 <p>The subscriber’s action within 90 days of the data sampling:</p>
 <table>
@@ -117,7 +117,7 @@ The set of original labels and their values is as follows:
 </table>
 Note that some of the prototype iterations simplified the above label set; this is described further down.</td>
 </tr>
-<tr class="even">
+<tr class="even" align="left">
 <td><p><b>PurchasedAdditionalIn90Days</b></p>
 <p>Whether or not the subscriber purchased additional products (from the mobile operator) within 90 days of the data sampling:</p>
 <p>
