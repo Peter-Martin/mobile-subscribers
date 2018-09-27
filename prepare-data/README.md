@@ -16,5 +16,5 @@ Subset (60%) of the labelled dataset above, used for training the model.
 - __validation-labelled.csv:__
 Subset (20%) of the labelled dataset above, optionally used for validating the trained model.
 
-*Note: See [this article](https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7) for an
-explanation of the purpose of the above training, validation and test datasets.*
+_Note: See [this article](https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7) for an
+explanation of the purpose of the above training, validation and test datasets._
