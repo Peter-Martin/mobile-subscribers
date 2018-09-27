@@ -282,7 +282,7 @@ Scores. Note that the table excludes any iterations that didn’t complete
 or that failed to predict some classes.
 
 | *Train*                   | *Train*                  | *Train*    | *Train*         | *Predict*     | *Predict*  | *Predict*    |
-| :------------------------ | :----------------------- | ---------- | --------------- | ------------- | ---------- | ------------ |
+| :------------------------ | :----------------------- | :--------- | :-------------- | :------------ | :--------- | :----------- |
 | **Data Set**              | **Classifier**           | **Scaled** | **Oversampled** | **Precision** | **Recall** | **F1 Score** |
 | Simple Downgrade Postpaid | MLP                      | yes        | yes             | 0.47          | 0.58       | 0.52         |
 | Simple Downgrade Postpaid | SGD                      | yes        | yes             | 0.43          | 0.61       | 0.50         |
