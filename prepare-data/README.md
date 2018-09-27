@@ -2,7 +2,7 @@
 Directory and subdirectories containing the various datasets used by this prototype.
 
 - __all-labelled.csv:__
-Original dataset (see below) labelled using [this Groovy code](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/src/Label.groovy).
+Original full dataset (see below) labelled using [this Groovy code](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/src/Label.groovy).
 
 - __all-original.csv:__
 Original full dataset created by [Generate Data](http://generatedata.com/), then cleaned using [this Groovy code](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/src/Clean.groovy).
