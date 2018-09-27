@@ -110,7 +110,7 @@ The set of original labels and their values is as follows:
 <td><p><b>UpdatedIn90Days</b></p>
 <p>The subscriber’s action within 90 days of the data sampling:</p>
 <table>
-<tr><td>- upgraded plan</td><td><i>for prepaid, means switched to postpaid</i></td></tr>
+<tr><td>- upgraded</td><td><i>for prepaid, means switched to postpaid</i></td></tr>
 <tr><td>- unchanged</td><td></td></tr>
 <tr><td>- downgraded plan</td><td><i>postpaid only</i></td></tr>
 <tr><td>- switched to prepaid</td><td><i>postpaid only</i></td></tr>
