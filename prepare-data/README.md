@@ -1,5 +1,5 @@
 # Description
-Contains the various datasets used by this prototype.
+Directory and subdirectories containing the various datasets used by this prototype.
 
 - __all-labelled.csv:__
 Original dataset (see below) labelled using [this Groovy code](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/src/Label.groovy).
