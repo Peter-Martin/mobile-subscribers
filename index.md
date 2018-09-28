@@ -404,8 +404,8 @@ learning is available
 
 **1\) Simple and Specific**
 
-  - Employing scaling/over-sampling typically delivered small
-    incremental metric improvements; e.g., of a few percent.
+  - Changing the classifier and adjusting scaling/over-sampling typically delivered
+    small incremental metric improvements; e.g., of a few percent.
   - Greater improvements were observed by manipulating/engineering the
     data; e.g., separating unrelated data (postpaid from prepaid),
     reducing the number of classes, etc.
