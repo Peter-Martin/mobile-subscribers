@@ -8,4 +8,4 @@ that's used to clean and label the datasets.
 [scikit-learn](http://scikit-learn.org/stable/index.html) and, to a lesser extent,
 [TensorFlow](https://www.tensorflow.org/).
 
-See [here TODO]() for a full description of the prototype and its outcomes.
+See [here](https://peter-martin.github.io/mobile-subscribers/) for a full description of the prototype and its outcomes.
