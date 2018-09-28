@@ -334,6 +334,7 @@ or that failed to predict some classes.
 | Simple                    | SGD                      | no         | no              | 0.15          | 0.00       | 0.00         |
 | Full                      | Linear SVC               | no         | no              | 0.13          | 0.00       | 0.00         |
 
+<p>/p>
 The confusion matrices for the top 2 performers (by F1 score) are as
 follows; the matrices respectively show the metrics for *downgraded* and
 *unchanged* classes.
