@@ -103,33 +103,25 @@ The original full labelled dataset is available
 [here](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/all-labelled.csv.tar.gz).
 The set of original labels and their values is as follows:
 
-<div align="left">
-<table>
-<tbody>
-<tr class="odd" align="left">
-<td><p><b>UpdatedIn90Days</b></p>
-<p>The subscriber’s action within 90 days of the data sampling:</p>
-<table>
-<tr><td>- upgraded</td><td><i>for prepaid, means switched to postpaid</i></td></tr>
-<tr><td>- unchanged</td><td></td></tr>
-<tr><td>- downgraded plan</td><td><i>postpaid only</i></td></tr>
-<tr><td>- switched to prepaid</td><td><i>postpaid only</i></td></tr>
-<tr><td>- cancelled</td><td><i>prepaid stopped topups, postpaid cancelled contract</i></td></tr>
-</table>
-Note that some of the prototype iterations simplified the above label set; this is described further down.</td>
-</tr>
-<tr class="even" align="left">
-<td><p><b>PurchasedAdditionalIn90Days</b></p>
-<p>Whether or not the subscriber purchased additional products (from the mobile operator) within 90 days of the data sampling:</p>
-<p>
-- purchased additional products<br>
-- didn't purchase additional products
-</p>
-<p><strong>NB:</strong> This label was generated in the original dataset. However, in order to narrow its focus, the prototype didn’t attempt to predict this label value.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+> **UpdatedIn90Days**
+>
+> The subscriber’s action within 90 days of the data sampling:
+> - upgraded plan<br/>*for prepaid, means switched to postpaid*
+> - unchanged
+> - downgraded plan<br/>*postpaid only*
+> - switched to prepaid<br/>*postpaid only*
+> - cancelled<br/>*prepaid stopped topups, postpaid cancelled contract*
+>
+> Note that some of the prototype iterations simplified the above label set; this is described further down.
+
+> **PurchasedAdditionalIn90Days**
+>
+> Whether or not the subscriber purchased additional products (from the mobile operator) within 90 days of the data sampling:
+> - purchased additional products
+> - didn't purchase additional products
+>
+> **NB:** This label was generated in the original dataset. However, in order to narrow its focus, the prototype didn’t attempt to predict this label value.
+
 
 # Software Evaluation
 
