@@ -338,29 +338,61 @@ The confusion matrices for the top 2 performers (by F1 score) are as
 follows; the matrices respectively show the metrics for *downgraded* and
 *unchanged* classes.
 
-<p></p>
+> **i) HIGHEST F1 SCORE: 0.52**
+> - Simple Downgrade Postpaid dataset
+> - Multi-layer Perceptron classifier
+> - Scaled
+> - Oversampled
+>
+> *\[\[15069 11039\]<br/>*
+> *\[16726 55680\]\]*
+>
+> For predicting downgrades, this model iteration produced
+> **15,069 true positives**; i.e., subscribers successfully predicted as
+> downgrades. However, the model failed to predict 11,039 downgrades,
+> thus it has a recall (‘quantity’) score of 0.58.
+>
+> In addition, the model produced **16,726 false positives**;
+> i.e., erroneously predicted subscribers as downgraded when they were
+> actually unchanged. This is from the total unchanged figure of
+> (16,726 + 55,680). Thus, the model has a reasonable precision
+> (‘quality’) score of 0.47.
 
-|**--- HIGHEST F1 SCORE: 0.52 ---**<br/><br/>- Simple Downgrade Postpaid Dataset<br/>- Multi-layer Perceptron Classifier<br/>- Scaled<br/>- Oversampled|
-|:---|
-|*\[\[15069 11039\]*<br/>*\[16726 55680\]\]*|
-|For predicting downgrades, this model iteration produced **15,069 true positives**; i.e., subscribers successfully predicted as downgrades. However, the model failed to predict 11,039 downgrades, thus it has a recall (‘quantity’) score of 0.58.|
-|In addition, the model produced **16,726 false positives**; i.e., erroneously predicted subscribers as downgraded when they were actually unchanged. This is from the total unchanged figure of (16,726 + 55,680). Thus, the model has a reasonable precision (‘quality’) score of 0.47.|
-
-<p></p>
-
-|**--- 2ND HIGHEST F1 SCORE: 0.50 ---**<br/><br/>- Simple Downgrade Postpaid Dataset<br/>- Stochastic Gradient Descent Classifier<br/>- Scaled<br/>- Oversampled|
-|:---|
-|*\[\[16069 10039\]*<br/>*\[21660 50746\]\]*|
-|This model iteration scored similarly to the previous model; slightly better recall (‘quantity’) score of 0.61, but a slightly lower precision (‘quality’) score of 0.43.|
+> **ii) 2ND HIGHEST F1 SCORE: 0.50**<br/>
+> - Simple Downgrade Postpaid dataset
+> - Stochastic Gradient Descent classifier
+> - Scaled
+> - Oversampled
+>
+> *\[\[16069 10039\]*<br/>
+> *\[21660 50746\]\]*
+>
+> This model iteration scored similarly to the previous model;
+> slightly better recall (‘quantity’) score of 0.61, but a slightly
+> lower precision (‘quality’) score of 0.43.
 
 It’s also useful to examine a very different confusion matrix for
 another model iteration:
 
-|**--- LOWER F1 SCORE: 0.44 ---**<br/><br/>- Simple Downgrade Postpaid Dataset<br/>- Multi-layer Perceptron Classifier<br/>- Not Scaled<br/>- Oversampled|
-|:---|
-|*\[\[22156 3952\]*<br/>*\[51695 20711\]\]*|
-|For predicting downgrades, this model iteration produced **22,156 true positives**; i.e., subscribers successfully predicted as downgrades. The model only failed to predict 3,952 downgraded subscribers. So it has a high recall (‘quantity’) score of 0.85.|
-|However, the model produced **51,695 false positives**; i.e., erroneously predicted subscribers as downgraded when they were actually unchanged. This is from the total unchanged figure of (51,695 + 20,711). So the model has a low precision (‘quality’) score of 0.30.|
+> **iii) LOWER F1 SCORE: 0.44**<br/>
+> - Simple Downgrade Postpaid dataset
+> - Multi-layer Perceptron classifier
+> - Not Scaled
+> - Oversampled
+>
+> *\[\[22156  3952\]*<br/>
+> *\[51695 20711\]\]*
+>
+> For predicting downgrades, this model iteration produced
+> **22,156 true positives**; i.e., subscribers successfully predicted
+> as downgrades. The model only failed to predict 3,952 downgraded
+> subscribers. So it has a high recall (‘quantity’) score of 0.85.
+>
+> However, the model produced **51,695 false positives**;
+> i.e., erroneously predicted subscribers as downgraded when they were
+> actually unchanged. This is from the total unchanged figure of
+> (51,695 + 20,711). So the model has a low precision (‘quality’) score
+> of 0.30.
 
 For the above model iterations, the precision and recall could be
 fine-tuned by adjusting the *probability threshold* (aka *decision
