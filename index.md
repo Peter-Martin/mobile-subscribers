@@ -40,7 +40,7 @@ plans/services can offer significant revenue benefits.
 
 Machine Learning potentially offers a means of using subscriber data to
 predict who will downgrade/cancel or upgrade. In Machine Learning
-terminology, this is a *classification* task.
+terminology, this is a **classification** task.
 
 For mobile phone operators, however, stringent data privacy controls and
 physical dispersal of data (across multiple subsystems or even
