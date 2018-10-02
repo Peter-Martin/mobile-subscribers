@@ -1,3 +1,15 @@
+# Contents
+
+- [Overview](#overview)
+- [Data Preparation](#data-preparation)
+- [Software Evaluation](#software-evaluation)
+- [Model Training and Prediction](#model-training-and-prediction)
+  * [Classifiers](#classifiers)
+  * [Data Sets](#data-sets)
+  * [Additional Transformations](#additional-transformations)
+- [Results and Analysis](#results-and-analysis)
+- [Conclusions](#conclusions)
+
 # Overview
 
 For any business that sells services to consumers, two key forecasting
@@ -262,7 +274,7 @@ instead of for downgrade.
 The Python source code for the training model iterations is available
 [here](https://github.com/Peter-Martin/mobile-subscribers/blob/master/train-model/scikit-learn/).
 
-# Downgrade Results and Analysis
+# Results and Analysis
 
 The following table describes the training iterations and their
 resulting downgrade prediction metrics; the iterations are sorted by their F1
