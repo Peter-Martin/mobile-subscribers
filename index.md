@@ -18,11 +18,11 @@ questions are:
   - Which consumers are likely to **cancel or downgrade** their service?
   - Which consumers are likely to **upgrade** their service?
 
-For the former (the potential ‘downgraders’), the business may wish to
+For the former, the potential ‘downgraders’, the business may wish to
 preemptively avoid the scenario by offering an alternative service
 package that’s more suited to the consumer’s needs.
 
-For the latter (the potential ’upgraders’), the business may wish to
+For the latter, the potential ’upgraders’, the business may wish to
 maximise consumer revenue by preemptively selling an upgraded service
 package or even upselling additional services.
 
@@ -40,7 +40,7 @@ plans/services can offer significant revenue benefits.
 
 Machine Learning potentially offers a means of using subscriber data to
 predict who will downgrade/cancel or upgrade. In Machine Learning
-terminology, this is a classification task.
+terminology, this is a *classification* task.
 
 For mobile phone operators, however, stringent data privacy controls and
 physical dispersal of data (across multiple subsystems or even
@@ -85,18 +85,18 @@ from the aforementioned data items; for example:
 For this prototype, a *synthetic* subscriber data set was created using
 the following steps:
 
-**1)** Generate the initial random data set using
+**1) Generate** the initial random data set using
 [generate data](http://generatedata.com/).
 The script was run locally to avail of an
 increased data set limit of 100,000 items. Generation was run 10 times
 to produce a data set with a total of 1,000,000 subscribers. This data
 set is available [here](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/all-original.csv.tar.gz).
 
-**2)** Clean the initial data set to fix and/or remove any invalid
+**2) Clean** the initial data set to fix and/or remove any invalid
 values. A [custom Groovy script](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/src/Clean.groovy)
 was written to perform the cleaning.
 
-**3)** Label the data set; i.e., classify each subscriber as
+**3) Label** the data set; i.e., classify each subscriber as
 cancelled/downgraded/unchanged/upgraded according to the
 rules/inferences listed towards the end of the earlier Overview
 section. Note, however, that an element of
@@ -106,7 +106,7 @@ apparently more ‘stable’ subscribers still downgrade or cancel, etc.
 An [additional Groovy script](https://github.com/Peter-Martin/mobile-subscribers/blob/master/prepare-data/src/Label.groovy)
 was written to perform this labelling.
 
-**4)** Split the labelled dataset into training (60%), validation (20%)
+**4) Split** the labelled dataset into training (60%), validation (20%)
 and test (20%) sets. See
 [this article](https://towardsdatascience.com/train-validation-and-test-sets-72cb40cba9e7)
 for an explanation of the purpose of each of these sets.
