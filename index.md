@@ -197,7 +197,7 @@ The following classifiers were used during the training iterations:
 Note that each training iteration used an identically-configured
 classifier (same random state, same number of hidden layers for neural
 network, etc.). It may be possible to obtain improved prediction results
-by varying the configuration of each classifier..
+by varying the configuration of each classifier.
 
 ## Data Sets
 
